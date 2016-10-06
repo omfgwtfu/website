@@ -1,0 +1,20 @@
+  Background Images and most likely all posts' images:
+    Unsplash (unsplash.com)
+
+  Profile picture:
+    Jessica Bowler (www.barcelonablonde.com)
+
+  Base Jekyll theme:
+    Strata (https://github.com/CloudCannon/Strata-Jekyll-Theme)
+    Provided by CloudCannon (http://cloudcannon.com/)
+    Adapted by yours truly
+
+  Icons:
+    Font Awesome (fortawesome.github.com/Font-Awesome)
+
+  Other:
+    jQuery (jquery.com)
+    html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+    CSS3 Pie (css3pie.com)
+    background-size polyfill (github.com/louisremi)
+    skel (getskel.com)

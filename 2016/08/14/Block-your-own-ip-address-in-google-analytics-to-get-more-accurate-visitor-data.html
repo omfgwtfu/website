@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+  	<head profile="http://www.w3.org/2005/10/profile">
+  		<title> Block Your Own IP Address on Google Analytics to Get More Accurate Visitor Data | Àlex Rodríguez Bacardit's personal website</title>
+  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      
+        <meta name="description" content="Here's how to avoid the number one mistake most people do when creating their first webpage or blog." />
+      
+      <meta name="keywords" content="sales, blogging, startups, ruby on rails, rails, web development, startups, consultancy, Barcelona, tacos" />
+
+      <!-- Facebook Open Graph -->
+      
+  <!-- Same for all pages -->
+  <meta property="og:url" content="http://www.alexrodba.com/2016/08/14/Block-your-own-ip-address-in-google-analytics-to-get-more-accurate-visitor-data.html" />
+  <meta property="og:title" content="Block Your Own IP Address on Google Analytics to Get More Accurate Visitor Data" />
+  <meta property="og:description" content="Here's how to avoid the number one mistake most people do when creating their first webpage or blog." />
+  <meta property="og:site_name" content="Àlex Rodríguez Bacardit's personal website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Only for blog posts -->
+
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://www.alexrodba.com/images/fulls/20160814.jpeg" />
+
+
+      <!-- Twitter cards -->
+      <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@lexrodba">
+<meta name="twitter:creator" content="@lexrodba">
+<meta name="twitter:title" content="Block Your Own IP Address on Google Analytics to Get More Accurate Visitor Data">
+<meta name="twitter:description" content="Here's how to avoid the number one mistake most people do when creating their first webpage or blog.">
+<meta name="twitter:image" content="http://www.alexrodba.com/images/fulls/20160814.jpeg">
+
+
+  		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  		<script src="/js/jquery.min.js"></script>
+  		<script src="/js/jquery.poptrox.min.js"></script>
+  		<script src="/js/skel.min.js"></script>
+  		<script src="/js/init.js"></script>
+  		<noscript>
+  			<link rel="stylesheet" href="/css/skel.css" />
+  			<link rel="stylesheet" href="/css/style.css" />
+  			<link rel="stylesheet" href="/css/style-xlarge.css" />
+  		</noscript>
+  		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+      <link rel="alternate" type="application/rss+xml" title="Àlex Rodríguez Bacardit RSS feed" href="/feed.xml"/>
+      <link rel="alternate" type="application/atom+xml" title="Àlex Rodríguez Bacardit Atom feed" href="/atom.xml" />
+      <link rel="icon" type="image/png" href="/images/icons/favicon9.png">
+  	</head>
+
+	<body id="top">
+
+      <header id="header" itemscope itemtype="http://schema.org/Person">
+          <a href="/" class="image avatar"><img src="/images/avatar.png" itemprop="image" alt="Àlex Rodríguez Bacardit" title="Àlex Rodríguez Bacardit" /></a>
+          <h1 class="mainheader"><strong>I am <a href="/">Àlex</a></strong>,<span style="display:block">
+          CMO & Co-founder at <a href="https://www.marsbased.com" title="MarsBased website" target="_blank">MarsBased</a> </span><span style="display:block">
+          Regional Director at <a href="http://www.startupgrind.com/barcelona" title="Startup Grind Barcelona website" target="_blank">Startup Grind</a></span></h1>
+
+          <meta itemprop="name" content="Àlex Rodríguez Bacardit"/>
+<meta itemprop="url" content="http://www.alexrodba.com"/>
+<meta itemprop="gender" content="Male"/>
+<meta itemprop="email" content="alex@marsbased.com"/>
+<meta itemprop="jobTitle" content="CMO & co-founder at MarsBased and Regional Director at Startup Grind"/>
+<link itemprop="sameAs" href="https://github.com/alexrodba"/>
+<link itemprop="sameAs" href="https://twitter.com/lexrodba"/>
+<link itemprop="sameAs" href="https://linkedin.com/in/alexrodba"/>
+<link itemprop="sameAs" href="https://medium.com/@lexrodba"/>
+<link itemprop="sameAs" href="https://plus.google.com/+%C3%80lexRodr%C3%ADguezBacardit"/>
+<link itemprop="sameAs" href="https://www.facebook.com/alex.rodba"/>
+<link itemprop="sameAs" href="https://www.instagram.com/alexrodba"/>
+<link itemprop="sameAs" href="http://www.last.fm/user/afuckinside"/>
+<link itemprop="sameAs" href="https://open.spotify.com/user/alex.rodba"/>
+<link itemprop="sameAs" href="https://www.goodreads.com/user/show/959492-lex-rodr-guez-bacardit"/>
+
+      </header>
+
+
+        <div id="main" class="blog">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="major">
+            <h2 class="post-title" itemprop="headline">Block Your Own IP Address on Google Analytics to Get More Accurate Visitor Data</h2>
+                <span class="post-icon">
+
+  
+  <img src="/images/icons/blogging.png" alt="Post from the Blogging category"></span>
+  
+
+</span>
+
+                <p class="post-meta"><span itemprop="datePublished">Aug 14, 2016 
+• 
+  
+    
+    3
+    
+       minutes to read
+    
+  
+
+
+ • <a href="#disqus_thread" title=""><script type="text/javascript">DISQUSWIDGETS.getCount({reset: true});</script></a></p>
+
+                
+
+
+        </header>
+
+        <section itemprop="articleBody">
+            <p><img src="/images/fulls/20160814.jpeg" title="People sitting in the porch of a Guesthouse" alt="People sitting in the porch of a Guesthouse" class="fit image" /> I’m pretty sure that you remember getting excited the first time you looked at Google Analytics. What would happen if I told you that most of those visits were yours?</p>
+
+<p>That’s it, unless you tell Google Analytics to block your very own visits, <strong>you will be counted as another visitor</strong>, and therefore accumulate rubbish data.</p>
+
+<p>This might sound appealing to show off the number of visits that you have, even if they are fake, for some short-term strategies, like reporting to investors, potential partnerships or other deals. But unless you fail to deliver after the deal is done, you will be just cheating at solitaire. I do not recommend it.</p>
+
+<p>Rather, I suggest we all play fair. Here’s how to do it.</p>
+
+<h2 id="step-1-create-a-google-analytics-account">Step 1: Create a Google Analytics account</h2>
+
+<p>I don’t think Google Analytics needs introduction, but it’s basically one of the most used Google products out there. In short, it helps you to track your website’s visitors over time and provides you with tonnes of useful data (if you know how to read it, that is!).</p>
+
+<p>Click here to <a href="http://analytics.google.com" title="Google Analytics" target="_blank">create a Google Analytics account</a>. The process is simple enough, but if you get lost in the process check our their <a href="https://support.google.com/analytics/answer/1008015?hl=en" title="Google Analytics help page" target="_blank">help page</a>.</p>
+
+<p>After this, you will have to include the Google Analytics code into your website. I could not explain it better than them, so you better check their <a href="https://support.google.com/analytics/answer/1008080?hl=en" title="Google Analytics Help System" target="_blank">help system</a>.</p>
+
+<h2 id="step-2-log-in-to-your-account">Step 2: Log in to your account</h2>
+
+<p>During the signup process, you will have registered your “account”, which is what you select in the first screen you see after the login. This is the screen:</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160814.png" title="Google Analytics landing page" alt="Google Analytics landing page" class="fit image " />
+  <span class="img-footer">These are some of the websites I own.</span>
+</div>
+
+<p>Once you select your website, you will be presented with the website’s dashboard.</p>
+
+<h2 id="step-3-create-the-filter">Step 3: Create the filter</h2>
+
+<p>Before doing that, we might want to find out what is our IP address. Easy as a pie: just Google <a href="https://www.google.com/search?q=what%27s+my+ip&amp;oq=what&amp;aqs=chrome.1.69i57j69i59j69i65l3j69i60.1703j0j1&amp;sourceid=chrome&amp;ie=UTF-8" title="What's my IP" target="_blank"><em>What’s my IP</em></a> and it will return something like this:</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160814ip.png" title="IP Address" alt="IP Address" class="fit image " />
+  <span class="img-footer">That's my IP right now. Come hack me!</span>
+</div>
+
+<p>Afterwards, we will go to the Administration tab, and we will be presented with this:</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160814admin.png" title="Google Analytics administration panel" alt="Google Analytics administration panel" class="fit image " />
+  <span class="img-footer">Google Analytics Administration Panel</span>
+</div>
+
+<p>Click on <em>All Filters</em> and then <em>Add Filter</em>. Once you’re there, fill in the form with the following information:</p>
+
+<ul>
+  <li>Filter Name: Whatever you want that will help you identify this filter (if you’ve got many).</li>
+  <li>Filter Type: Predefined.</li>
+  <li>Dropdowns: <em>Exclude</em>, <em>Traffic from the IP addresses</em>, <em>that are equal to</em></li>
+  <li>IP Address: The number you’ve gotten from Google.</li>
+</ul>
+
+<p>It’ll have to look like this:</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160814filter.png" title="Google Analytics filters" alt="Google Analytics filters" class="fit image " />
+  <span class="img-footer">This is how a filter in Google Analytics looks like</span>
+</div>
+
+<h2 id="bonus-create-an-additional-filter-to-block-localhost">Bonus: Create an additional filter to block localhost</h2>
+
+<p>Long story short, the filter we have created above only works if you’re accessing the website once it’s published. But if you’re working with a local version (for instance, I am using Jekyll), you will be accessing (and therefore logging accesses) from 127.0.0.1 (localhost).</p>
+
+<p>You can do two things to avoid this. If you’re a developer, you can add Google Analytics as an environment variable so it only loads once the website is live.</p>
+
+<p>If you’re not a developer, or just do not want to deal with that, you can create the following filter:</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160814localhost.png" title="Google Analytics filter to block localhost" alt="Google Analytics filter to block localhost" class="fit image " />
+  <span class="img-footer">Google Analytics filter to block localhost</span>
+</div>
+
+<hr />
+
+<p>That’s all, folks! Hope you enjoyed the read and / or have found it useful. What else can I help you with?</p>
+
+
+            
+
+        </section>
+
+        <section>
+        <div class="row">
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+
+        var disqus_config = function () {
+        this.page.url = 'http://www.alexrodba.com/2016/08/14/Block-your-own-ip-address-in-google-analytics-to-get-more-accurate-visitor-data.html'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/2016/08/14/Block-your-own-ip-address-in-google-analytics-to-get-more-accurate-visitor-data'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//alexrodba.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+
+        </section>
+
+        <footer class="related">
+            <div class="row">
+            
+
+                <article class="6u 12u(small) excerpt">
+                    <header>
+                        <span class="post-icon">
+
+  
+  <img src="/images/icons/comment.png" alt="Post from the Opinion category"></span>
+  
+
+</span>
+<h2 class="post-title">
+                        <a href="/2016/08/09/My-Extraterrestrial-Experience-at-Project-Youngfish.html">My Extraterrestrial Experience at Project Youngfish</a></h2>
+                        <p class="post-meta">Aug 9, 2016 
+• 
+  
+    
+    4
+    
+       minutes to read
+    
+  
+
+
+ • <a href="/2016/08/09/My-Extraterrestrial-Experience-at-Project-Youngfish.html#disqus_thread" title="My Extraterrestrial Experience at Project Youngfish"><script type="text/javascript">DISQUSWIDGETS.getCount({reset: true});</script></a>
+                        </p>
+                    </header>
+                    <section>
+                        <p><img src="/images/fulls/20160809.jpg" title="Àlex Rodríguez Bacardit mentoring at Project Youngfish" alt="Àlex Rodríguez Bacardit mentoring at Project Youngfish" class="fit image" /> Fostering entrepreneurship is admittedly one of the hottest trends nowadays. But far from being merely a passing phase, creating new entrepreneurs has become something essential in our society.</p>
+
+
+                    </section>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="/2016/08/09/My-Extraterrestrial-Experience-at-Project-Youngfish.html" class="button">Read More</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            
+
+            
+            </div>
+        </footer>
+
+    </article>
+
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            
+            <ul class="copyright">
+                <li>
+                  <a href="/archive" title="All blog posts by Àlex Rodríguez Bacardit">
+                    My posts
+                  </a>
+                </li>
+                <li>
+                  <a href="/talks" title="All talks by Àlex Rodríguez Bacardit">
+                    My talks
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" title="About Àlex Rodríguez Bacardit">
+                    About me
+                  </a>
+                </li>
+            </ul>
+
+
+
+                        <ul class="icons">
+
+              
+              <li>
+                <a href="https://github.com/alexrodba" class="icon fa-github" title="Àlex Rodríguez Bacardit on GitHub" target="_blank">
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://twitter.com/lexrodba" class="icon fa-twitter" title="Àlex Rodríguez Bacardit on Twitter" target="_blank">
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://linkedin.com/in/alexrodba" class="icon fa-linkedin" title="Àlex Rodríguez Bacardit on LinkedIn" target="_blank">
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://medium.com/@lexrodba" class="icon fa-medium" title="Àlex Rodríguez Bacardit on Medium" target="_blank">
+                  <span class="label">Medium</span>
+                </a>
+              </li>
+              
+
+
+
+              
+              <li>
+                <a href="https://www.facebook.com/alex.rodba" class="icon fa-facebook" title="Àlex Rodríguez Bacardit on Facebook" target="_blank">
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+              
+
+              </ul>
+              <ul class="icons">
+
+              
+              <li>
+                <a href="https://www.instagram.com/alexrodba" class="icon fa-instagram" title="Àlex Rodríguez Bacardit on Instagram" target="_blank">
+                  <span class="label">Instagram</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="http://www.last.fm/user/afuckinside" class="icon fa-lastfm" title="Àlex Rodríguez Bacardit on LastFM" target="_blank">
+                  <span class="label">Last.fm</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://open.spotify.com/user/alex.rodba" class="icon fa-spotify" title="Àlex Rodríguez Bacardit on Spotify" target="_blank">
+                  <span class="label">Spotify</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://www.goodreads.com/user/show/959492-lex-rodr-guez-bacardit" class="icon fa-goodreads" title="Àlex Rodríguez Bacardit on GoodReads" target="_blank">
+                  <span class="fa-lg" style="font-family:helvetica;vertical-align:text-top;">g</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="mailto:alex@marsbased.com" class="icon fa-envelope-o">
+                  <span class="label">alex@marsbased.com</span>
+                </a>
+              </li>
+              
+            </ul>
+
+
+        </footer>
+
+    <script id="dsq-count-scr" src="//alexrodba.disqus.com/count.js" async></script>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75319984-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+  	<head profile="http://www.w3.org/2005/10/profile">
+  		<title> Syndicate Old Blog Posts in Jekyll without Screwing Your SEO | Àlex Rodríguez Bacardit's personal website</title>
+  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      
+        <meta name="description" content="There's no clear explanation on the Internet on how to do this properly, so I built my own solution." />
+      
+      <meta name="keywords" content="sales, blogging, startups, ruby on rails, rails, web development, startups, consultancy, Barcelona, tacos" />
+
+      <!-- Facebook Open Graph -->
+      
+  <!-- Same for all pages -->
+  <meta property="og:url" content="http://www.alexrodba.com/2016/04/19/Syndicate-Old-Blog-Posts-in-Jekyll-Without-Screwing-Your-SEO.html" />
+  <meta property="og:title" content="Syndicate Old Blog Posts in Jekyll without Screwing Your SEO" />
+  <meta property="og:description" content="There's no clear explanation on the Internet on how to do this properly, so I built my own solution." />
+  <meta property="og:site_name" content="Àlex Rodríguez Bacardit's personal website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Only for blog posts -->
+
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://www.alexrodba.com/images/fulls/20160419.png" />
+
+
+      <!-- Twitter cards -->
+      <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@lexrodba">
+<meta name="twitter:creator" content="@lexrodba">
+<meta name="twitter:title" content="Syndicate Old Blog Posts in Jekyll without Screwing Your SEO">
+<meta name="twitter:description" content="There's no clear explanation on the Internet on how to do this properly, so I built my own solution.">
+<meta name="twitter:image" content="http://www.alexrodba.com/images/fulls/20160419.png">
+
+
+  		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  		<script src="/js/jquery.min.js"></script>
+  		<script src="/js/jquery.poptrox.min.js"></script>
+  		<script src="/js/skel.min.js"></script>
+  		<script src="/js/init.js"></script>
+  		<noscript>
+  			<link rel="stylesheet" href="/css/skel.css" />
+  			<link rel="stylesheet" href="/css/style.css" />
+  			<link rel="stylesheet" href="/css/style-xlarge.css" />
+  		</noscript>
+  		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+      <link rel="alternate" type="application/rss+xml" title="Àlex Rodríguez Bacardit RSS feed" href="/feed.xml"/>
+      <link rel="alternate" type="application/atom+xml" title="Àlex Rodríguez Bacardit Atom feed" href="/atom.xml" />
+      <link rel="icon" type="image/png" href="/images/icons/favicon9.png">
+  	</head>
+
+	<body id="top">
+
+      <header id="header" itemscope itemtype="http://schema.org/Person">
+          <a href="/" class="image avatar"><img src="/images/avatar.png" itemprop="image" alt="Àlex Rodríguez Bacardit" title="Àlex Rodríguez Bacardit" /></a>
+          <h1 class="mainheader"><strong>I am <a href="/">Àlex</a></strong>,<span style="display:block">
+          CMO & Co-founder at <a href="https://www.marsbased.com" title="MarsBased website" target="_blank">MarsBased</a> </span><span style="display:block">
+          Regional Director at <a href="http://www.startupgrind.com/barcelona" title="Startup Grind Barcelona website" target="_blank">Startup Grind</a></span></h1>
+
+          <meta itemprop="name" content="Àlex Rodríguez Bacardit"/>
+<meta itemprop="url" content="http://www.alexrodba.com"/>
+<meta itemprop="gender" content="Male"/>
+<meta itemprop="email" content="alex@marsbased.com"/>
+<meta itemprop="jobTitle" content="CMO & co-founder at MarsBased and Regional Director at Startup Grind"/>
+<link itemprop="sameAs" href="https://github.com/alexrodba"/>
+<link itemprop="sameAs" href="https://twitter.com/lexrodba"/>
+<link itemprop="sameAs" href="https://linkedin.com/in/alexrodba"/>
+<link itemprop="sameAs" href="https://medium.com/@lexrodba"/>
+<link itemprop="sameAs" href="https://plus.google.com/+%C3%80lexRodr%C3%ADguezBacardit"/>
+<link itemprop="sameAs" href="https://www.facebook.com/alex.rodba"/>
+<link itemprop="sameAs" href="https://www.instagram.com/alexrodba"/>
+<link itemprop="sameAs" href="http://www.last.fm/user/afuckinside"/>
+<link itemprop="sameAs" href="https://open.spotify.com/user/alex.rodba"/>
+<link itemprop="sameAs" href="https://www.goodreads.com/user/show/959492-lex-rodr-guez-bacardit"/>
+
+      </header>
+
+
+        <div id="main" class="blog">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="major">
+            <h2 class="post-title" itemprop="headline">Syndicate Old Blog Posts in Jekyll without Screwing Your SEO</h2>
+                <span class="post-icon">
+
+  
+  <img src="/images/icons/jekyll.png" alt="Post from the Jekyll category"></span>
+  
+
+</span>
+
+                <p class="post-meta"><span itemprop="datePublished">Apr 19, 2016 
+• 
+  
+    
+    6
+    
+       minutes to read
+    
+  
+
+
+ • <a href="#disqus_thread" title=""><script type="text/javascript">DISQUSWIDGETS.getCount({reset: true});</script></a></p>
+
+                
+
+
+        </header>
+
+        <section itemprop="articleBody">
+            <p><img src="/images/fulls/20160419.png" title="Fire" alt="Fire" class="fit image" /> There’s no clear explanation on the Internet on how to do this properly, so I built my own solution.</p>
+
+<p>Those who know me well will be tired of hearing me say all the time that <strong>if you’re not part of the solution, you’re part of the problem</strong>. I’m a firm believer of this conviction and I say it all the time. Most likely, when I die, I will have that written on my tombstone.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>I have been learning marketing on my own for the past years, and most of what I have found is that marketers tend to exaggerate A LOT.</p>
+
+<p>Marketers like to sell their expertise on things that are, in most of the cases, just common sense. That’s it, I dropped the bomb, but I stand firmly by this affirmation. And while I still haven’t accomplished anything too big, marketing-wise, I must say I am fairly content with what I’ve done with both <a href="https://www.marsbased.com" title="MarsBased" target="_blank">MarsBased</a> and <a href="http://www.startupgrind.com" target="_blank" title="Startup Grind Barcelona">Startup Grind Barcelona</a>.</p>
+
+<p>So many studies, so many rules, so many theories, workshops, webinars and astrology about SEO and no one has quite figured out how to syndicate old blog posts correctly. That is the case of this very blog which I started in late March 2016. I want to aggregate here all the blog posts I’ve produced for MarsBased, Startup Grind, Barcelona Ventures and other sites I’ve written for throughout the years.</p>
+
+<p>That would have been simple if we were not talking about risking a Google penalty for content duplication! Serious stuff here.</p>
+
+<p>So, how are we supposed to syndicate our own old stuff into a new site?</p>
+
+<h2 id="the-solution-part-1-the-tech-stuff">The Solution Part 1: The Tech Stuff</h2>
+
+<p>Full disclaimer, if you came for the SEO stuff, skip this section.</p>
+
+<p>First and foremost, I am going to describe how I implemented this in Jekyll, my static site generator of choice. And yours, if you’re right about stuff.</p>
+
+<p>I’m going to assume you know how to run a blog on Jekyll and that you’ve got basic coding skills. No rocket science required, though.</p>
+
+<p>For this, we add a new set of variables called <code class="highlighter-rouge">original</code> on the <a href="https://jekyllrb.com/docs/frontmatter/" title="Jekyll Front Matter" target="_blank">Jekyll front matter</a>, such as the one highlighted below:</p>
+
+<p><img src="/images/fulls/20160419frontmatter.png" title="Jekyll Front Matter" alt="Jekyll Front Matter" class="fit image" /></p>
+
+<p>I have all sorts of useful variables there, but let’s focus on <code class="highlighter-rouge">original</code>. You can either write it yourself, or you can copy them from here (make sure you respect the indentation):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>original:
+  link: https://medium.com/@lexrodba/i-love-telling-stories-97367d98caf1#.6hipt2gsc
+  date: 2014-12-11
+  site: Medium
+</code></pre>
+</div>
+
+<p>That means that we have a variable called <code class="highlighter-rouge">original</code> that includes three other variables that I describe here:</p>
+
+<ul>
+  <li><strong>link</strong>: Contains the URL of the original post or content.</li>
+  <li><strong>date</strong>: Contains the original post or content’s publishing date.</li>
+  <li><strong>site</strong>: Contains the name of the site where the post or content was published.</li>
+</ul>
+
+<p>You will create a file named <code class="highlighter-rouge">post-original.erb</code> under the <code class="highlighter-rouge">_includes</code> folder with the following content:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">page.original</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+
+  </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">include.param</span><span class="w"> </span><span class="err">==</span><span class="w"> </span><span class="err">'header'</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+
+    </span><span class="err">&lt;link</span><span class="w"> </span><span class="err">rel=</span><span class="s2">"canonical"</span><span class="w"> </span><span class="err">href=</span><span class="s2">"{{ page.original.link }}"</span><span class="w"> </span><span class="err">/&gt;</span><span class="w">
+
+  </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">elsif</span><span class="w"> </span><span class="err">include.param</span><span class="w"> </span><span class="err">==</span><span class="w"> </span><span class="err">'body'</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+
+  </span><span class="err">&lt;p</span><span class="w"> </span><span class="err">class=</span><span class="s2">"original-post"</span><span class="err">&gt;This</span><span class="w"> </span><span class="err">post</span><span class="w"> </span><span class="err">was</span><span class="w"> </span><span class="err">originally</span><span class="w"> </span><span class="err">published</span><span class="w"> </span><span class="err">on</span><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.original.site</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span><span class="err">on</span><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.original.date</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">date:</span><span class="w"> </span><span class="nt">"%b %-d, %Y"</span><span class="w">  </span><span class="err">}}:</span><span class="w"> </span><span class="err">&lt;a</span><span class="w"> </span><span class="err">href=</span><span class="s2">"{{ page.original.link }}"</span><span class="w"> </span><span class="err">title=</span><span class="s2">"{{ page.title }}"</span><span class="w"> </span><span class="err">target=</span><span class="s2">"_blank"</span><span class="err">&gt;</span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.title</span><span class="w"> </span><span class="p">}</span><span class="err">}&lt;/a&gt;.&lt;/p&gt;</span><span class="w">
+
+  </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endif</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+
+</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endif</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>This file basically means <i>if the blog post has got the ‘original’ variable set (that means, it’s a syndicated post) and output HTML according to the parameter that will be passed on during the call</i>.</p>
+
+<p>Why this? Well, I wanted to group the logic in a simple file, instead of calling two different files. We will call this file twice per post, once in the header and once after the content. More details in the marketing section below.</p>
+
+<p>Then, you will locate the <code class="highlighter-rouge">_layouts/posts.html</code> and add the two calls that you see in the snippet below. As mentioned above, one in the header and one after the content, with its corresponding parameter.</p>
+
+<p><img src="/images/fulls/20160419calls.png" title="Jekyll SEO stuff" alt="Jekyll SEO stuff" class="fit image" /></p>
+
+<p>Customize to your heart’s content from here.</p>
+
+<h2 id="the-solution-part-2-the-marketing-stuff">The Solution Part 2: The Marketing Stuff</h2>
+
+<p>Let’s start with the basics: Google does not approve of duplicated content. What’s more: if they find out you duplicate content, they can potentially penalise you.</p>
+
+<p>What’s the best way to avoid being penalised for duplicating content? Obviously, it is <strong>not duplicating content</strong> if you want to play it 100% safe. However, if you really need to do it and are a little adventurous yourself, then follow me.</p>
+
+<p>Most marketers will agree that you should never publish using the old date. Even if you’re re-posting stuff, you should do it using today’s time, linking back to the original post.</p>
+
+<p>Screw that: even if Google uses bots to crawl the sites, your visitors are humans. Use common sense to make their life easier and their experience more enjoyable.</p>
+
+<p>In the previous section we developed a plugin that will add the following two crucial code snippets to your reused blog post:</p>
+
+<ul>
+  <li>A <code class="highlighter-rouge">rel=canonical</code> metatag in the header.</li>
+  <li>A written reference to the original post.</li>
+</ul>
+
+<p>The first one is a hidden reference to the original post using a metatag. Metatags don’t show up to visitors, but stay hidden in the source code, hence being readable by bots &amp; crawlers alike.</p>
+
+<p>To understand this metatag better, I suggest you read these two articles:</p>
+
+<ul>
+  <li><a href="https://support.google.com/webmasters/answer/139066?hl=en" title="Google's explanation of canonical URLs" target="_blank">Google’s explanation of canonical URLs</a>.</li>
+  <li><a href="https://moz.com/learn/seo/canonicalization" title="Canonicalization by Moz.com" target="_blank">Canonicalization, by Moz.com</a>.</li>
+</ul>
+
+<p>This hidden code snippet will appear like this in your source code:</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160419canonical.png" title="Canonical link" alt="Canonical link" class="fit image border" />
+  <span class="img-footer">HTML code output.</span>
+</div>
+
+<p>The second code snippet is a written reference to the original content, and will appear visibly at the end of the content. Both the visitor and the crawler will understand.</p>
+
+<div class="full-img">
+
+  <img src="/images/fulls/20160419reference.png" title="Canonical link" alt="Canonical link" class="fit image border" />
+  <span class="img-footer">Simple and elegant.</span>
+</div>
+
+<p>This way, we have developed a solution that’s both functional and elegant and will let you syndicate old stuff in your site without having SEO issues or incurring into penalisations because of content duplication.</p>
+
+<p>Let me know if I accidentally skipped anything in the comments section below or what have you done to solve this problem before reading this!</p>
+
+<p><strong>Now Playing:</strong> <a href="https://open.spotify.com/track/0zmAX3kQProQYd6SuDGLbq" title="Nacho Vegas - Dry Martini, S.A." target="_blank"><i class="fa fa-spotify"></i> Nacho Vegas - Dry Martini, S.A.</a>.</p>
+
+
+
+            
+
+        </section>
+
+        <section>
+        <div class="row">
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+
+        var disqus_config = function () {
+        this.page.url = 'http://www.alexrodba.com/2016/04/19/Syndicate-Old-Blog-Posts-in-Jekyll-Without-Screwing-Your-SEO.html'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/2016/04/19/Syndicate-Old-Blog-Posts-in-Jekyll-Without-Screwing-Your-SEO'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//alexrodba.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+
+        </section>
+
+        <footer class="related">
+            <div class="row">
+            
+
+                <article class="6u 12u(small) excerpt">
+                    <header>
+                        <span class="post-icon">
+
+  
+  <img src="/images/icons/productivity.png" alt="Post from the Productivity category"></span>
+  
+
+</span>
+<h2 class="post-title">
+                        <a href="/2016/04/17/Give-Yourself-A-Head-Start-On-The-Week-By-Gearing-Up-On-Sunday-Evenings.html">Give Yourself a Head Start on the Week by Gearing up on Sunday Evenings</a></h2>
+                        <p class="post-meta">Apr 17, 2016 
+• 
+  
+    
+    4
+    
+       minutes to read
+    
+  
+
+
+ • <a href="/2016/04/17/Give-Yourself-A-Head-Start-On-The-Week-By-Gearing-Up-On-Sunday-Evenings.html#disqus_thread" title="Give Yourself a Head Start on the Week by Gearing up on Sunday Evenings"><script type="text/javascript">DISQUSWIDGETS.getCount({reset: true});</script></a>
+                        </p>
+                    </header>
+                    <section>
+                        <p><img src="/images/fulls/20160417post.jpeg" title="Gears" alt="Gears" class="fit image" /> No, this blog entry isn’t about working during the weekend to be more productive. On the contrary: start early to finish earlier.</p>
+
+
+                    </section>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="/2016/04/17/Give-Yourself-A-Head-Start-On-The-Week-By-Gearing-Up-On-Sunday-Evenings.html" class="button">Read More</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            
+
+            
+
+                <article class="6u$ 12u(small) excerpt f-right">
+                    <header>
+                        <span class="post-icon">
+
+  
+  <img src="/images/icons/jekyll.png" alt="Post from the Jekyll category"></span>
+  
+
+</span>
+<h2 class="post-title"><a href="/2016/04/24/Adding-minutes-to-read-to-your-jekyll-blog.html">Adding 'Minutes to read' to your Jekyll blog</a></h2>
+                        <p class="post-meta">Apr 24, 2016 
+• 
+  
+    
+    1
+    
+       minute to read
+    
+  
+
+
+ • <a href="/2016/04/24/Adding-minutes-to-read-to-your-jekyll-blog.html#disqus_thread" title="Adding 'Minutes to read' to your Jekyll blog"><script type="text/javascript">DISQUSWIDGETS.getCount({reset: true});</script></a>
+                        </p>
+                    </header>
+                    <section>
+                        <p><img src="/images/fulls/20160424.png" title="Reading" alt="Reading" class="fit image" /> I created a code snippet to calculate reading time on a given blog post for Jekyll.</p>
+
+
+                    </section>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="/2016/04/24/Adding-minutes-to-read-to-your-jekyll-blog.html" class="button">Read More</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            
+            </div>
+        </footer>
+
+    </article>
+
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            
+            <ul class="copyright">
+                <li>
+                  <a href="/archive" title="All blog posts by Àlex Rodríguez Bacardit">
+                    My posts
+                  </a>
+                </li>
+                <li>
+                  <a href="/talks" title="All talks by Àlex Rodríguez Bacardit">
+                    My talks
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" title="About Àlex Rodríguez Bacardit">
+                    About me
+                  </a>
+                </li>
+            </ul>
+
+
+
+                        <ul class="icons">
+
+              
+              <li>
+                <a href="https://github.com/alexrodba" class="icon fa-github" title="Àlex Rodríguez Bacardit on GitHub" target="_blank">
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://twitter.com/lexrodba" class="icon fa-twitter" title="Àlex Rodríguez Bacardit on Twitter" target="_blank">
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://linkedin.com/in/alexrodba" class="icon fa-linkedin" title="Àlex Rodríguez Bacardit on LinkedIn" target="_blank">
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://medium.com/@lexrodba" class="icon fa-medium" title="Àlex Rodríguez Bacardit on Medium" target="_blank">
+                  <span class="label">Medium</span>
+                </a>
+              </li>
+              
+
+
+
+              
+              <li>
+                <a href="https://www.facebook.com/alex.rodba" class="icon fa-facebook" title="Àlex Rodríguez Bacardit on Facebook" target="_blank">
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+              
+
+              </ul>
+              <ul class="icons">
+
+              
+              <li>
+                <a href="https://www.instagram.com/alexrodba" class="icon fa-instagram" title="Àlex Rodríguez Bacardit on Instagram" target="_blank">
+                  <span class="label">Instagram</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="http://www.last.fm/user/afuckinside" class="icon fa-lastfm" title="Àlex Rodríguez Bacardit on LastFM" target="_blank">
+                  <span class="label">Last.fm</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://open.spotify.com/user/alex.rodba" class="icon fa-spotify" title="Àlex Rodríguez Bacardit on Spotify" target="_blank">
+                  <span class="label">Spotify</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="https://www.goodreads.com/user/show/959492-lex-rodr-guez-bacardit" class="icon fa-goodreads" title="Àlex Rodríguez Bacardit on GoodReads" target="_blank">
+                  <span class="fa-lg" style="font-family:helvetica;vertical-align:text-top;">g</span>
+                </a>
+              </li>
+              
+
+              
+              <li>
+                <a href="mailto:alex@marsbased.com" class="icon fa-envelope-o">
+                  <span class="label">alex@marsbased.com</span>
+                </a>
+              </li>
+              
+            </ul>
+
+
+        </footer>
+
+    <script id="dsq-count-scr" src="//alexrodba.disqus.com/count.js" async></script>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75319984-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+	</body>
+</html>
